@@ -12,6 +12,9 @@ JSON Schema $Ref Parser
 
 [![OS and Browser Compatibility](https://apitools.dev/img/badges/ci-badges-with-ie.svg)](https://travis-ci.com/APIDevTools/json-schema-ref-parser)
 
+Fork notice:
+--------------------------
+- This includes a patch from [@luma](https://github.com/luma/json-schema-ref-parser/commit/dda0b635299ebd1dd96fc010e7110c69e92c6a24) to include an `$originalRef` property
 
 The Problem:
 --------------------------

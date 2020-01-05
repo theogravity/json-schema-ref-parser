@@ -23,9 +23,11 @@ const dereferencedSchema = module.exports =
           type: "string"
         }
       },
+      $originalRef: ["definitions/pet.yaml"],
     },
     thing: {
-      $ref: "#/definitions/thing"
+      $ref: "#/definitions/thing",
+      $originalRef: ["circular-external.yaml#/definitions/thing"],
     },
     person: {
       title: "person",
@@ -35,7 +37,8 @@ const dereferencedSchema = module.exports =
         name: {
           type: "string"
         }
-      }
+      },
+      $originalRef: ["definitions/person.yaml", "person.yaml"],
     },
     parent: {
       title: "parent",
@@ -48,7 +51,8 @@ const dereferencedSchema = module.exports =
           items: null,
           type: "array"
         }
-      }
+      },
+      $originalRef: ["definitions/parent.yaml", "parent.yaml"],
     },
     child: {
       title: "child",
@@ -61,7 +65,8 @@ const dereferencedSchema = module.exports =
         name: {
           type: "string"
         }
-      }
+      },
+      $originalRef: ["child.yaml", "definitions/child.yaml"],
     }
   }
 };

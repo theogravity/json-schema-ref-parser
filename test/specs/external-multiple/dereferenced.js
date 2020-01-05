@@ -16,14 +16,17 @@ module.exports = {
         }
       },
       example: {
-        name: "Homer"
-      }
+        name: "Homer",
+        $originalRef: ["definitions.yaml#/User/example"],
+      },
+      $originalRef: ["definitions.yaml#/User"],
     }
   },
   example: {
     token: "11111111",
     user: {
-      name: "Homer"
+      name: "Homer",
+      $originalRef: ["definitions.yaml#/User/example"],
     }
   }
 };

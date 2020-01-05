@@ -8,6 +8,9 @@ const bundledSchema = module.exports =
         title: "thing",
         $ref: "#/definitions/thing",
         description: "This JSON Reference has additional properties (other than $ref). Normally, this creates a new type that extends the referenced type, but since this reference points to ITSELF, it doesn't do that.\n",
+        $originalRef: [
+          "definitions/thing.yaml"
+        ],
       }
     }
   },
@@ -17,10 +20,12 @@ const bundledSchema = module.exports =
     type: "object",
     properties: {
       age: {
-        type: "number"
+        type: "number",
+        $originalRef: ["animals.yaml#/definitions/bird/properties/age"],
       },
       name: {
-        type: "string"
+        type: "string",
+        $originalRef: ["animals.yaml#/definitions/dog/properties/name"],
       },
       species: {
         type: "string",
@@ -32,6 +37,7 @@ const bundledSchema = module.exports =
         ],
       },
     },
+    $originalRef: ["definitions/pet.yaml"],
   },
 
   ancestor: {
@@ -50,7 +56,8 @@ const bundledSchema = module.exports =
           name: {
             type: "string"
           }
-        }
+        },
+        $originalRef: ["definitions/person-with-spouse.yaml"],
       },
       pet: null
     }
@@ -71,7 +78,10 @@ const bundledSchema = module.exports =
             },
             type: "array"
           }
-        }
+        },
+        $originalRef: [
+          "definitions/parent-with-children.yaml"
+        ],
       },
       child: {
         title: "child",
@@ -90,7 +100,10 @@ const bundledSchema = module.exports =
           name: {
             type: "string"
           }
-        }
+        },
+        $originalRef: [
+          "definitions/child-with-parents.yaml"
+        ],
       },
       pet: null
     }
@@ -110,6 +123,9 @@ const bundledSchema = module.exports =
             description: 'This JSON Reference has additional properties (other than $ref). This creates a new type that extends "child".\n',
           }
         },
+        $originalRef: [
+          "definitions/parent-with-child.yaml"
+        ],
       },
       child: {
         title: "child",
@@ -130,6 +146,9 @@ const bundledSchema = module.exports =
             description: "children"
           }
         },
+        $originalRef: [
+          "definitions/child-with-children.yaml"
+        ],
       }
     }
   }

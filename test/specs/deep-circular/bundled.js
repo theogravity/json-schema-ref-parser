@@ -28,7 +28,8 @@ module.exports =
         last: {
           minLength: 1,
           type: "string",
-          title: "requiredString"
+          title: "requiredString",
+          $originalRef: ["./required-string.yaml"],
         },
         suffix: {
           $ref: "#/definitions/name/properties/prefix",
@@ -39,6 +40,7 @@ module.exports =
           $ref: "#/definitions/name/properties/last"
         }
       },
+      $originalRef: ["definitions/name.yaml"],
     }
   },
   properties: {

@@ -16,26 +16,49 @@ let name = {
     prefix: {
       minLength: 3,
       type: "string",
-      title: "requiredString"
+      title: "requiredString",
+      $originalRef: [
+        "../definitions/required-string.yaml",
+        "./required-string.yaml",
+        "#/properties/last",
+        "#/properties/prefix"
+      ],
     },
     last: {
       minLength: 1,
       type: "string",
-      title: "requiredString"
+      title: "requiredString",
+      $originalRef: [
+        "../definitions/required-string.yaml",
+        "./required-string.yaml",
+        "#/properties/last",
+      ],
     },
     suffix: {
       minLength: 3,
       maxLength: 3,
       type: "string",
-      title: "requiredString"
+      title: "requiredString",
+      $originalRef: [
+        "../definitions/required-string.yaml",
+        "./required-string.yaml",
+        "#/properties/last",
+        "#/properties/prefix"
+      ],
     },
     first: {
       minLength: 1,
       type: "string",
-      title: "requiredString"
+      title: "requiredString",
+      $originalRef: [
+        "../definitions/required-string.yaml",
+        "./required-string.yaml",
+        "#/properties/last",
+      ],
     }
   },
-  title: "name"
+  title: "name",
+  $originalRef: ["definitions/name.yaml"],
 };
 
 module.exports =

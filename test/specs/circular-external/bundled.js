@@ -23,6 +23,7 @@ module.exports =
           type: "string"
         }
       },
+      $originalRef: ["definitions/pet.yaml"],
     },
     thing: {
       $ref: "#/definitions/thing"
@@ -37,7 +38,8 @@ module.exports =
         name: {
           type: "string"
         }
-      }
+      },
+      $originalRef: ["definitions/person.yaml"],
     },
     parent: {
       title: "parent",
@@ -52,7 +54,8 @@ module.exports =
           },
           type: "array"
         }
-      }
+      },
+      $originalRef: ["definitions/parent.yaml"]
     },
     child: {
       title: "child",
@@ -67,7 +70,8 @@ module.exports =
         name: {
           type: "string"
         }
-      }
+      },
+      $originalRef: ["definitions/child.yaml"],
     }
   }
 };

@@ -9,7 +9,12 @@ module.exports =
     requiredString: {
       title: "requiredString",
       minLength: 1,
-      type: "string"
+      type: "string",
+      $originalRef: [
+        "#/definitions/requiredString",
+        "#/definitions/name/properties/first",
+        "#/definitions/name/properties/last"
+      ]
     },
     name: {
       required: [
@@ -21,12 +26,22 @@ module.exports =
         first: {
           title: "requiredString",
           type: "string",
-          minLength: 1
+          minLength: 1,
+          $originalRef: [
+            "#/definitions/requiredString",
+            "#/definitions/name/properties/first",
+            "#/definitions/name/properties/last"
+          ]
         },
         last: {
           title: "requiredString",
           type: "string",
-          minLength: 1
+          minLength: 1,
+          $originalRef: [
+            "#/definitions/requiredString",
+            "#/definitions/name/properties/first",
+            "#/definitions/name/properties/last"
+          ]
         },
         middle: {
           type: "string",
@@ -35,15 +50,28 @@ module.exports =
         prefix: {
           title: "requiredString",
           type: "string",
-          minLength: 3
+          minLength: 3,
+          $originalRef: [
+            "#/definitions/requiredString",
+            "#/definitions/name/properties/first",
+            "#/definitions/name/properties/last",
+            "#/definitions/name/properties/prefix"
+          ]
         },
         suffix: {
           title: "requiredString",
           type: "string",
           minLength: 3,
-          maxLength: 3
+          maxLength: 3,
+          $originalRef: [
+            "#/definitions/requiredString",
+            "#/definitions/name/properties/first",
+            "#/definitions/name/properties/last",
+            "#/definitions/name/properties/prefix"
+          ]
         }
-      }
+      },
+      $originalRef: ["#/definitions/name"],
     }
   },
   required: [
@@ -75,12 +103,22 @@ module.exports =
         first: {
           title: "requiredString",
           type: "string",
-          minLength: 1
+          minLength: 1,
+          $originalRef: [
+            "#/definitions/requiredString",
+            "#/definitions/name/properties/first",
+            "#/definitions/name/properties/last"
+          ]
         },
         last: {
           title: "requiredString",
           type: "string",
-          minLength: 1
+          minLength: 1,
+          $originalRef: [
+            "#/definitions/requiredString",
+            "#/definitions/name/properties/first",
+            "#/definitions/name/properties/last"
+          ]
         },
         middle: {
           type: "string",
@@ -89,15 +127,28 @@ module.exports =
         prefix: {
           title: "requiredString",
           type: "string",
-          minLength: 3
+          minLength: 3,
+          $originalRef: [
+            "#/definitions/requiredString",
+            "#/definitions/name/properties/first",
+            "#/definitions/name/properties/last",
+            "#/definitions/name/properties/prefix"
+          ]
         },
         suffix: {
           title: "requiredString",
           type: "string",
           minLength: 3,
-          maxLength: 3
+          maxLength: 3,
+          $originalRef: [
+            "#/definitions/requiredString",
+            "#/definitions/name/properties/first",
+            "#/definitions/name/properties/last",
+            "#/definitions/name/properties/prefix"
+          ]
         }
-      }
+      },
+      $originalRef: ["#/definitions/name"],
     }
   },
   title: "Person"

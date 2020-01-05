@@ -1,7 +1,6 @@
 "use strict";
 
-module.exports =
-{
+module.exports = {
   type: "object",
   properties: {
     "level 1": {
@@ -399,23 +398,29 @@ module.exports =
           },
           prefix: {
             minLength: 3,
-            $ref: "#/properties/name/type/properties/last"
+            $ref: "#/properties/name/type/properties/last",
           },
           last: {
             minLength: 1,
             type: "string",
-            title: "requiredString"
+            title: "requiredString",
+            $originalRef: [
+              "./required-string.yaml",
+            ]
           },
           suffix: {
             $ref: "#/properties/name/type/properties/prefix",
             type: "string",
-            maxLength: 3
+            maxLength: 3,
           },
           first: {
-            $ref: "#/properties/name/type/properties/last"
+            $ref: "#/properties/name/type/properties/last",
           }
         },
-        title: "name"
+        title: "name",
+        $originalRef: [
+          "definitions/name.yaml"
+        ]
       }
     }
   },

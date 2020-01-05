@@ -23,10 +23,16 @@ const dereferencedSchema = module.exports =
             type: "string"
           }
         },
-        title: "pet"
+        title: "pet",
+        $originalRef: [
+          "#/definitions/pet"
+        ],
       },
       thing: {
-        $ref: "#/definitions/thing"
+        $ref: "#/definitions/thing",
+        $originalRef: [
+          "#/definitions/thing"
+        ]
       },
       child: {
         type: "object",
@@ -50,7 +56,10 @@ const dereferencedSchema = module.exports =
                 type: "string"
               }
             },
-            title: "pet"
+            title: "pet",
+            $originalRef: [
+              "#/definitions/pet"
+            ],
           },
           name: {
             type: "string"
@@ -75,7 +84,10 @@ const dereferencedSchema = module.exports =
             age: {
               type: "number"
             }
-          }
+          },
+          $originalRef: [
+            "#/definitions/person"
+          ]
         },
         pet: {
           type: "object",
@@ -96,7 +108,10 @@ const dereferencedSchema = module.exports =
               type: "string"
             }
           },
-          title: "pet"
+          title: "pet",
+          $originalRef: [
+            "#/definitions/pet"
+          ],
         }
       }
     },
@@ -116,7 +131,10 @@ const dereferencedSchema = module.exports =
             age: {
               type: "number"
             }
-          }
+          },
+          $originalRef: [
+            "#/definitions/person"
+          ],
         },
         pet: {
           type: "object",
@@ -137,7 +155,10 @@ const dereferencedSchema = module.exports =
               type: "string"
             }
           },
-          title: "pet"
+          title: "pet",
+          $originalRef: [
+            "#/definitions/pet"
+          ],
         }
       }
     }
@@ -156,7 +177,10 @@ const dereferencedSchema = module.exports =
               items: null,
               type: "array"
             }
-          }
+          },
+          $originalRef: [
+            "#/definitions/parent"
+          ]
         },
         child: {
           title: "child",
@@ -169,7 +193,10 @@ const dereferencedSchema = module.exports =
             name: {
               type: "string"
             }
-          }
+          },
+          $originalRef: [
+            "#/definitions/child"
+          ],
         },
         pet: {
           type: "object",
@@ -190,7 +217,10 @@ const dereferencedSchema = module.exports =
               type: "string"
             }
           },
-          title: "pet"
+          title: "pet",
+          $originalRef: [
+            "#/definitions/pet"
+          ],
         }
       }
     },
@@ -209,7 +239,10 @@ const dereferencedSchema = module.exports =
               },
               type: "array"
             }
-          }
+          },
+          $originalRef: [
+            "#/definitions/parent",
+          ],
         },
         child: {
           title: "child",
@@ -224,7 +257,10 @@ const dereferencedSchema = module.exports =
             name: {
               type: "string"
             }
-          }
+          },
+          $originalRef: [
+            "#/definitions/child",
+          ],
         },
         pet: {
           type: "object",
@@ -245,7 +281,10 @@ const dereferencedSchema = module.exports =
               type: "string"
             }
           },
-          title: "pet"
+          title: "pet",
+          $originalRef: [
+            "#/definitions/pet"
+          ],
         }
       }
     }
@@ -276,6 +315,9 @@ const dereferencedSchema = module.exports =
               description: "children"
             }
           },
+          $originalRef: [
+            "#/definitions/child",
+          ],
         },
         pet: {
           type: "object",
@@ -296,7 +338,10 @@ const dereferencedSchema = module.exports =
               type: "string"
             }
           },
-          title: "pet"
+          title: "pet",
+          $originalRef: [
+            "#/definitions/pet"
+          ],
         }
       }
     },
@@ -329,6 +374,9 @@ const dereferencedSchema = module.exports =
               description: "children"
             }
           },
+          $originalRef: [
+            "#/definitions/child",
+          ],
         },
         pet: {
           type: "object",
@@ -349,7 +397,10 @@ const dereferencedSchema = module.exports =
               type: "string"
             }
           },
-          title: "pet"
+          title: "pet",
+          $originalRef: [
+            "#/definitions/pet"
+          ],
         }
       }
     }

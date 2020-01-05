@@ -22,7 +22,8 @@ module.exports =
         last: {
           title: "required string",
           type: "string",
-          minLength: 1
+          minLength: 1,
+          $originalRef: ["./required-string.yaml"],
         },
         middle: {
           type: {
@@ -41,18 +42,21 @@ module.exports =
           type: "string",
           maxLength: 3
         }
-      }
+      },
+      $originalRef: ["definitions/definitions.json#/name"],
     },
     age: {
       type: "integer",
-      minimum: 0
+      minimum: 0,
+      $originalRef: ["definitions/definitions.json#/age"],
     },
     gender: {
       type: "string",
       enum: [
         "male",
         "female"
-      ]
+      ],
+      $originalRef: ["definitions/definitions.json#/gender"],
     }
   }
 };

@@ -17,7 +17,8 @@ module.exports = {
       },
       example: {
         name: "Homer"
-      }
+      },
+      $originalRef: ["definitions.yaml#/User"],
     }
   },
   example: {

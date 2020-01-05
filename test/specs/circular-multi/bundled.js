@@ -36,16 +36,28 @@ module.exports = {
                   label: {
                     $ref: "#/properties/actions/properties/prevAction/properties"
                   }
-                }
+                },
+                $originalRef: [
+                  "action.json"
+                ]
               },
               switch: {
                 type: "array",
                 $ref: "#/properties/actions/properties/prevAction/properties/definitions/asset"
               }
-            }
-          }
+            },
+            $originalRef: [
+              "text_assets.json"
+            ],
+          },
+          $originalRef: [
+            "#/definitions/actions"
+          ],
         }
       }
     }
-  }
+  },
+  $originalRef: [
+    "def.json#/definitions/container"
+  ],
 };

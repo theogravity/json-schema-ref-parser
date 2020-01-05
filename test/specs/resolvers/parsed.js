@@ -18,13 +18,16 @@ module.exports =
       properties: {
         last: {
           minLength: 1,
-          type: "string"
+          type: "string",
+          $originalRef: ["#/definitions/name/properties/first"],
         },
         first: {
           minLength: 1,
-          type: "string"
+          type: "string",
+          $originalRef: ["#/definitions/name/properties/first"],
         }
-      }
+      },
+      $originalRef: ["#/definitions/name"],
     }
   },
   required: [
@@ -52,13 +55,16 @@ module.exports =
       properties: {
         last: {
           minLength: 1,
-          type: "string"
+          type: "string",
+          $originalRef: ["#/definitions/name/properties/first"]
         },
         first: {
           minLength: 1,
-          type: "string"
+          type: "string",
+          $originalRef: ["#/definitions/name/properties/first"]
         }
-      }
+      },
+      $originalRef: ["#/definitions/name"],
     }
   },
   title: "Person"

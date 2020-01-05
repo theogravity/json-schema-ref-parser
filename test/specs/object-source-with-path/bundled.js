@@ -27,7 +27,8 @@ module.exports =
     requiredString: {
       title: "requiredString",
       type: "string",
-      minLength: 1
+      minLength: 1,
+      $originalRef: ["required-string.yaml"],
     },
     string: {
       $ref: "#/definitions/requiredString/type"
@@ -63,7 +64,9 @@ module.exports =
           type: "string",
           maxLength: 3
         }
-      }
-    }
+      },
+      $originalRef: ["../definitions/name.yaml"],
+    },
+    $originalRef: ["definitions/definitions.json"],
   }
 };

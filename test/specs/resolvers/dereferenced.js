@@ -6,7 +6,8 @@ module.exports =
     foo: {
       bar: {
         baz: "hello world"
-      }
+      },
+      $originalRef: ["foo://bar.baz"],
     },
     name: {
       required: [
@@ -17,13 +18,16 @@ module.exports =
       properties: {
         last: {
           minLength: 1,
-          type: "string"
+          type: "string",
+          $originalRef: ["#/definitions/name/properties/first"]
         },
         first: {
           minLength: 1,
-          type: "string"
+          type: "string",
+          $originalRef: ["#/definitions/name/properties/first"],
         }
-      }
+      },
+      $originalRef: ["#/definitions/name"],
     },
     pet: {
       type: "object",
@@ -44,7 +48,8 @@ module.exports =
           type: "string"
         }
       },
-      title: "pet"
+      title: "pet",
+      $originalRef: ["definitions/pet.yaml"],
     }
   },
   required: [
@@ -72,13 +77,16 @@ module.exports =
       properties: {
         last: {
           minLength: 1,
-          type: "string"
+          type: "string",
+          $originalRef: ["#/definitions/name/properties/first"],
         },
         first: {
           minLength: 1,
-          type: "string"
+          type: "string",
+          $originalRef: ["#/definitions/name/properties/first"],
         }
-      }
+      },
+      $originalRef: ["#/definitions/name"],
     }
   },
   title: "Person"

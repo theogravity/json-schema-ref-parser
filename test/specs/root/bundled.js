@@ -10,10 +10,13 @@ module.exports =
   type: "object",
   properties: {
     last: {
-      type: "string"
+      type: "string",
+      $originalRef: ["./name.yaml#/properties/first"],
     },
     first: {
-      type: "string"
+      type: "string",
+      $originalRef: ["./name.yaml#/properties/first"],
     }
   },
+  $originalRef: ["name.yaml", "definitions/root.json"],
 };
