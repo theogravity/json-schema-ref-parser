@@ -27,7 +27,10 @@ module.exports =
     "required string": {
       title: "required string",
       type: "string",
-      minLength: 1
+      minLength: 1,
+      $originalRef: [
+        "required-string.yaml"
+      ]
     },
     string: {
       $ref: "#/definitions/required%20string/type"
@@ -59,11 +62,17 @@ module.exports =
           minLength: 3
         },
         suffix: {
-          $ref: "#/definitions/name/properties/prefix",
           type: "string",
+          $ref: "#/definitions/name/properties/prefix",
           maxLength: 3
         }
-      }
-    }
+      },
+      $originalRef: [
+        "../definitions/name.yaml"
+      ]
+    },
+    $originalRef: [
+      "definitions/definitions.json"
+    ]
   }
 };

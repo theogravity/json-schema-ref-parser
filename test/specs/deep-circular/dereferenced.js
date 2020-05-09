@@ -56,7 +56,7 @@ let name = {
     }
   },
   title: "name",
-  $originalRef: [ "#/definitions/name", "definitions/name.yaml" ],
+  $originalRef: ["#/definitions/name", "definitions/name.yaml"],
 };
 
 const dereferencedSchema = module.exports =

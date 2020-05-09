@@ -69,7 +69,7 @@ module.exports =
     age: {
       type: "integer",
       minimum: 0,
-      $originalRef: [ "definitions/definitions.json#/age" ],
+      $originalRef: ["definitions/definitions.json#/age"],
     },
     gender: {
       type: "string",
@@ -77,7 +77,7 @@ module.exports =
         "male",
         "female"
       ],
-      $originalRef: [ "definitions/definitions.json#/gender" ],
+      $originalRef: ["definitions/definitions.json#/gender"],
     }
   }
 };
