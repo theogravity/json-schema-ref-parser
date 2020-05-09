@@ -404,7 +404,7 @@ module.exports = {
             minLength: 1,
             type: "string",
             title: "requiredString",
-            $originalRef: [
+            "x-original-ref": [
               "./required-string.yaml",
             ]
           },
@@ -418,7 +418,7 @@ module.exports = {
           }
         },
         title: "name",
-        $originalRef: [
+        "x-original-ref": [
           "definitions/name.yaml"
         ]
       }

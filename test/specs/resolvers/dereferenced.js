@@ -7,7 +7,7 @@ module.exports =
       bar: {
         baz: "hello world"
       },
-      $originalRef: ["foo://bar.baz"],
+      "x-original-ref": ["foo://bar.baz"],
     },
     name: {
       required: [
@@ -19,15 +19,15 @@ module.exports =
         last: {
           minLength: 1,
           type: "string",
-          $originalRef: ["#/definitions/name/properties/first"]
+          "x-original-ref": ["#/definitions/name/properties/first"]
         },
         first: {
           minLength: 1,
           type: "string",
-          $originalRef: ["#/definitions/name/properties/first"],
+          "x-original-ref": ["#/definitions/name/properties/first"],
         }
       },
-      $originalRef: ["#/definitions/name"],
+      "x-original-ref": ["#/definitions/name"],
     },
     pet: {
       type: "object",
@@ -49,7 +49,7 @@ module.exports =
         }
       },
       title: "pet",
-      $originalRef: ["definitions/pet.yaml"],
+      "x-original-ref": ["definitions/pet.yaml"],
     }
   },
   required: [
@@ -78,15 +78,15 @@ module.exports =
         last: {
           minLength: 1,
           type: "string",
-          $originalRef: ["#/definitions/name/properties/first"],
+          "x-original-ref": ["#/definitions/name/properties/first"],
         },
         first: {
           minLength: 1,
           type: "string",
-          $originalRef: ["#/definitions/name/properties/first"],
+          "x-original-ref": ["#/definitions/name/properties/first"],
         }
       },
-      $originalRef: ["#/definitions/name"],
+      "x-original-ref": ["#/definitions/name"],
     }
   },
   title: "Person"

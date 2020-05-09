@@ -16,7 +16,7 @@ module.exports = {
   external1: {
     test: {
       type: "string",
-      $originalRef: ["definitions.yaml#/thing"],
+      "x-original-ref": ["definitions.yaml#/thing"],
     }
   },
   external2: {

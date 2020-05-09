@@ -8,7 +8,7 @@ const dereferencedSchema = module.exports =
         title: "thing",
         $ref: "#/definitions/thing",
         description: "This JSON Reference has additional properties (other than $ref). Normally, this creates a new type that extends the referenced type, but since this reference points to ITSELF, it doesn't do that.\n",
-        $originalRef: ["definitions/thing.yaml"],
+        "x-original-ref": ["definitions/thing.yaml"],
       }
     }
   },
@@ -19,11 +19,11 @@ const dereferencedSchema = module.exports =
     properties: {
       age: {
         type: "number",
-        $originalRef: ["animals.yaml#/definitions/bird/properties/age"],
+        "x-original-ref": ["animals.yaml#/definitions/bird/properties/age"],
       },
       name: {
         type: "string",
-        $originalRef: ["animals.yaml#/definitions/dog/properties/name"],
+        "x-original-ref": ["animals.yaml#/definitions/dog/properties/name"],
       },
       species: {
         type: "string",
@@ -35,7 +35,7 @@ const dereferencedSchema = module.exports =
         ],
       },
     },
-    $originalRef: ["definitions/pet.yaml"],
+    "x-original-ref": ["definitions/pet.yaml"],
   },
 
   ancestor: {
@@ -48,20 +48,20 @@ const dereferencedSchema = module.exports =
               title: "person",
               description: 'This JSON Reference has additional properties (other than $ref). This creates a new type that extends "person".\n',
               properties: null,
-              $originalRef: ["definitions/person-with-spouse.yaml", "person-with-spouse.yaml"],
+              "x-original-ref": ["definitions/person-with-spouse.yaml", "person-with-spouse.yaml"],
             },
             pet: {
               description: 'This JSON Reference has additional properties (other than $ref). This creates a new type that extends "pet".\n',
               title: "pet",
               type: "object",
               properties: null,
-              $originalRef: ["pet.yaml"],
+              "x-original-ref": ["pet.yaml"],
             },
             name: {
               type: "string",
             }
           },
-          $originalRef: ["definitions/person-with-spouse.yaml", "person-with-spouse.yaml"],
+          "x-original-ref": ["definitions/person-with-spouse.yaml", "person-with-spouse.yaml"],
         },
         pet: null
       }
@@ -91,12 +91,12 @@ const dereferencedSchema = module.exports =
                 title: "child",
                 description: 'This JSON Reference has additional properties (other than $ref). This creates a new type that extends "child".\n',
                 properties: null,
-                $originalRef: ["child-with-parents.yaml"]
+                "x-original-ref": ["child-with-parents.yaml"]
               },
               type: "array"
             }
           },
-          $originalRef: ["definitions/parent-with-children.yaml", "parent-with-children.yaml"],
+          "x-original-ref": ["definitions/parent-with-children.yaml", "parent-with-children.yaml"],
         },
         child: {
           title: "child",
@@ -106,7 +106,7 @@ const dereferencedSchema = module.exports =
                 title: "parent",
                 description: 'This JSON Reference has additional properties (other than $ref). This creates a new type that extends "parent".\n',
                 properties: null,
-                $originalRef: ["definitions/parent-with-children.yaml", "parent-with-children.yaml"]
+                "x-original-ref": ["definitions/parent-with-children.yaml", "parent-with-children.yaml"]
               },
               type: "array"
             },
@@ -115,13 +115,13 @@ const dereferencedSchema = module.exports =
               title: "pet",
               type: "object",
               properties: null,
-              $originalRef: ["pet.yaml"],
+              "x-original-ref": ["pet.yaml"],
             },
             name: {
               type: "string"
             }
           },
-          $originalRef: ["definitions/child-with-parents.yaml"],
+          "x-original-ref": ["definitions/child-with-parents.yaml"],
         },
         pet: null
       }
@@ -154,10 +154,10 @@ const dereferencedSchema = module.exports =
               description: 'This JSON Reference has additional properties (other than $ref). This creates a new type that extends "child".\n',
               title: "child",
               properties: null,
-              $originalRef: ["child-with-children.yaml"],
+              "x-original-ref": ["child-with-children.yaml"],
             }
           },
-          $originalRef: [
+          "x-original-ref": [
             "definitions/parent-with-child.yaml"
           ],
         },
@@ -169,7 +169,7 @@ const dereferencedSchema = module.exports =
               title: "pet",
               type: "object",
               properties: null,
-              $originalRef: ["pet.yaml"],
+              "x-original-ref": ["pet.yaml"],
             },
             name: {
               type: "string"
@@ -179,13 +179,13 @@ const dereferencedSchema = module.exports =
                 description: 'This JSON Reference has additional properties (other than $ref). This creates a new type that extends "child".\n',
                 title: "child",
                 properties: null,
-                $originalRef: ["child-with-children.yaml"],
+                "x-original-ref": ["child-with-children.yaml"],
               },
               type: "array",
               description: "children"
             },
           },
-          $originalRef: ["definitions/child-with-children.yaml"],
+          "x-original-ref": ["definitions/child-with-children.yaml"],
         }
       }
     },

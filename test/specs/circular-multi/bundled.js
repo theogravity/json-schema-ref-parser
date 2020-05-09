@@ -37,7 +37,7 @@ module.exports = {
                     $ref: "#/properties/actions/properties/prevAction/properties"
                   }
                 },
-                $originalRef: [
+                "x-original-ref": [
                   "action.json"
                 ]
               },
@@ -46,18 +46,18 @@ module.exports = {
                 $ref: "#/properties/actions/properties/prevAction/properties/definitions/asset"
               }
             },
-            $originalRef: [
+            "x-original-ref": [
               "text_assets.json"
             ],
           },
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/actions"
           ],
         }
       }
     }
   },
-  $originalRef: [
+  "x-original-ref": [
     "def.json#/definitions/container"
   ],
 };

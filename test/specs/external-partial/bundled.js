@@ -23,7 +23,7 @@ module.exports =
           title: "required string",
           type: "string",
           minLength: 1,
-          $originalRef: ["./required-string.yaml"],
+          "x-original-ref": ["./required-string.yaml"],
         },
         middle: {
           type: {
@@ -43,12 +43,12 @@ module.exports =
           maxLength: 3
         }
       },
-      $originalRef: ["definitions/definitions.json#/name"],
+      "x-original-ref": ["definitions/definitions.json#/name"],
     },
     age: {
       type: "integer",
       minimum: 0,
-      $originalRef: ["definitions/definitions.json#/age"],
+      "x-original-ref": ["definitions/definitions.json#/age"],
     },
     gender: {
       type: "string",
@@ -56,7 +56,7 @@ module.exports =
         "male",
         "female"
       ],
-      $originalRef: ["definitions/definitions.json#/gender"],
+      "x-original-ref": ["definitions/definitions.json#/gender"],
     }
   }
 };

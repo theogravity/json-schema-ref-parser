@@ -15,7 +15,7 @@ let name = {
       minLength: 3,
       type: "string",
       title: "requiredString",
-      $originalRef: [
+      "x-original-ref": [
         "../definitions/required-string.yaml",
         "./required-string.yaml",
         "#/properties/last",
@@ -26,7 +26,7 @@ let name = {
       minLength: 1,
       type: "string",
       title: "requiredString",
-      $originalRef: [
+      "x-original-ref": [
         "../definitions/required-string.yaml",
         "./required-string.yaml",
         "#/properties/last"
@@ -37,7 +37,7 @@ let name = {
       maxLength: 3,
       type: "string",
       title: "requiredString",
-      $originalRef: [
+      "x-original-ref": [
         "../definitions/required-string.yaml",
         "./required-string.yaml",
         "#/properties/last",
@@ -48,7 +48,7 @@ let name = {
       minLength: 1,
       type: "string",
       title: "requiredString",
-      $originalRef: [
+      "x-original-ref": [
         "../definitions/required-string.yaml",
         "./required-string.yaml",
         "#/properties/last",
@@ -56,7 +56,7 @@ let name = {
     }
   },
   title: "name",
-  $originalRef: ["#/definitions/name", "definitions/name.yaml"],
+  "x-original-ref": ["#/definitions/name", "definitions/name.yaml"],
 };
 
 const dereferencedSchema = module.exports =
@@ -330,7 +330,7 @@ const dereferencedSchema = module.exports =
     },
     name
   },
-  $originalRef: ["#"],
+  "x-original-ref": ["#"],
 };
 
 dereferencedSchema

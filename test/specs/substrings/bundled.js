@@ -7,19 +7,19 @@ module.exports =
     "name-with-min-length": {
       "min-length": 1,
       type: "string",
-      $originalRef: ["../definitions/strings.yaml#/definitions/string-with-min-length"],
+      "x-original-ref": ["../definitions/strings.yaml#/definitions/string-with-min-length"],
     },
     "name-with-min-length-max-length": {
       "min-length": 1,
       "max-length": 20,
       type: "string",
-      $originalRef: ["./strings.yaml#/definitions/string-with-min-length-max-length"],
+      "x-original-ref": ["./strings.yaml#/definitions/string-with-min-length-max-length"],
     },
     name: {
       type: "string",
-      $originalRef: ["strings.yaml#/definitions/string"],
+      "x-original-ref": ["strings.yaml#/definitions/string"],
     },
-    $originalRef: ["definitions/definitions.json"],
+    "x-original-ref": ["definitions/definitions.json"],
   },
   required: [
     "name"

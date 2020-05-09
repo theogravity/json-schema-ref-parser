@@ -17,16 +17,16 @@ module.exports = {
       },
       example: {
         name: "Homer",
-        $originalRef: ["definitions.yaml#/User/example"],
+        "x-original-ref": ["definitions.yaml#/User/example"],
       },
-      $originalRef: ["definitions.yaml#/User"],
+      "x-original-ref": ["definitions.yaml#/User"],
     }
   },
   example: {
     token: "11111111",
     user: {
       name: "Homer",
-      $originalRef: ["definitions.yaml#/User/example"],
+      "x-original-ref": ["definitions.yaml#/User/example"],
     }
   }
 };

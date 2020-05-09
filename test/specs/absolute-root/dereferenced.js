@@ -20,7 +20,7 @@ module.exports =
           title: "required string",
           type: "string",
           minLength: 1,
-          $originalRef: [
+          "x-original-ref": [
             "../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "#/properties/last",
@@ -31,7 +31,7 @@ module.exports =
           title: "required string",
           type: "string",
           minLength: 1,
-          $originalRef: [
+          "x-original-ref": [
             "../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "#/properties/last",
@@ -46,7 +46,7 @@ module.exports =
           minLength: 3,
           title: "required string",
           type: "string",
-          $originalRef: [
+          "x-original-ref": [
             "../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "#/properties/last",
@@ -58,7 +58,7 @@ module.exports =
           maxLength: 3,
           minLength: 3,
           title: "required string",
-          $originalRef: [
+          "x-original-ref": [
             "../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "#/properties/last",
@@ -66,7 +66,7 @@ module.exports =
           ]
         }
       },
-      $originalRef: [
+      "x-original-ref": [
         "#/definitions/name",
         "../definitions/name.yaml"
       ]
@@ -88,7 +88,7 @@ module.exports =
       title: "required string",
       type: "string",
       minLength: 1,
-      $originalRef: [
+      "x-original-ref": [
         "../definitions/definitions.json#/required string",
         "./required-string.yaml",
         "#/properties/last",
@@ -108,7 +108,7 @@ module.exports =
           title: "required string",
           type: "string",
           minLength: 1,
-          $originalRef: [
+          "x-original-ref": [
             "../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "#/properties/last",
@@ -119,7 +119,7 @@ module.exports =
           title: "required string",
           type: "string",
           minLength: 1,
-          $originalRef: [
+          "x-original-ref": [
             "../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "#/properties/last",
@@ -134,7 +134,7 @@ module.exports =
           minLength: 3,
           title: "required string",
           type: "string",
-          $originalRef: [
+          "x-original-ref": [
             "../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "#/properties/last",
@@ -146,7 +146,7 @@ module.exports =
           maxLength: 3,
           minLength: 3,
           title: "required string",
-          $originalRef: [
+          "x-original-ref": [
             "../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "#/properties/last",
@@ -154,12 +154,12 @@ module.exports =
           ]
         }
       },
-      $originalRef: [
+      "x-original-ref": [
         "#/definitions/name",
         "../definitions/name.yaml"
       ]
     },
-    $originalRef: [
+    "x-original-ref": [
       "definitions/definitions.json"
     ]
   }

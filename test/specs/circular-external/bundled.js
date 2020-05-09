@@ -23,7 +23,7 @@ module.exports =
           type: "string"
         }
       },
-      $originalRef: ["definitions/pet.yaml"],
+      "x-original-ref": ["definitions/pet.yaml"],
     },
     thing: {
       $ref: "#/definitions/thing"
@@ -39,7 +39,7 @@ module.exports =
           type: "string"
         }
       },
-      $originalRef: ["definitions/person.yaml"],
+      "x-original-ref": ["definitions/person.yaml"],
     },
     parent: {
       title: "parent",
@@ -55,7 +55,7 @@ module.exports =
           type: "array"
         }
       },
-      $originalRef: ["definitions/parent.yaml"]
+      "x-original-ref": ["definitions/parent.yaml"]
     },
     child: {
       title: "child",
@@ -71,7 +71,7 @@ module.exports =
           type: "string"
         }
       },
-      $originalRef: ["definitions/child.yaml"],
+      "x-original-ref": ["definitions/child.yaml"],
     }
   }
 };

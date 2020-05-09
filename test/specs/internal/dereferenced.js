@@ -10,7 +10,7 @@ module.exports =
       title: "requiredString",
       minLength: 1,
       type: "string",
-      $originalRef: [
+      "x-original-ref": [
         "#/definitions/requiredString",
         "#/definitions/name/properties/first",
         "#/definitions/name/properties/last"
@@ -27,7 +27,7 @@ module.exports =
           title: "requiredString",
           type: "string",
           minLength: 1,
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/requiredString",
             "#/definitions/name/properties/first",
             "#/definitions/name/properties/last"
@@ -37,7 +37,7 @@ module.exports =
           title: "requiredString",
           type: "string",
           minLength: 1,
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/requiredString",
             "#/definitions/name/properties/first",
             "#/definitions/name/properties/last"
@@ -51,7 +51,7 @@ module.exports =
           title: "requiredString",
           type: "string",
           minLength: 3,
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/requiredString",
             "#/definitions/name/properties/first",
             "#/definitions/name/properties/last",
@@ -63,7 +63,7 @@ module.exports =
           type: "string",
           minLength: 3,
           maxLength: 3,
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/requiredString",
             "#/definitions/name/properties/first",
             "#/definitions/name/properties/last",
@@ -71,7 +71,7 @@ module.exports =
           ]
         }
       },
-      $originalRef: ["#/definitions/name"],
+      "x-original-ref": ["#/definitions/name"],
     }
   },
   required: [
@@ -104,7 +104,7 @@ module.exports =
           title: "requiredString",
           type: "string",
           minLength: 1,
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/requiredString",
             "#/definitions/name/properties/first",
             "#/definitions/name/properties/last"
@@ -114,7 +114,7 @@ module.exports =
           title: "requiredString",
           type: "string",
           minLength: 1,
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/requiredString",
             "#/definitions/name/properties/first",
             "#/definitions/name/properties/last"
@@ -128,7 +128,7 @@ module.exports =
           title: "requiredString",
           type: "string",
           minLength: 3,
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/requiredString",
             "#/definitions/name/properties/first",
             "#/definitions/name/properties/last",
@@ -140,7 +140,7 @@ module.exports =
           type: "string",
           minLength: 3,
           maxLength: 3,
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/requiredString",
             "#/definitions/name/properties/first",
             "#/definitions/name/properties/last",
@@ -148,7 +148,7 @@ module.exports =
           ]
         }
       },
-      $originalRef: ["#/definitions/name"],
+      "x-original-ref": ["#/definitions/name"],
     }
   },
   title: "Person"

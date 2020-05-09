@@ -20,7 +20,7 @@ module.exports =
           title: "required string",
           type: "string",
           minLength: 1,
-          $originalRef: [
+          "x-original-ref": [
             "../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "../definitions/definitions.json#/name/properties/last"
@@ -30,7 +30,7 @@ module.exports =
           title: "required string",
           type: "string",
           minLength: 1,
-          $originalRef: [
+          "x-original-ref": [
             "../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "../definitions/definitions.json#/name/properties/last"
@@ -44,7 +44,7 @@ module.exports =
           title: "required string",
           type: "string",
           minLength: 3,
-          $originalRef: [
+          "x-original-ref": [
             "../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "../definitions/definitions.json#/name/properties/last",
@@ -56,7 +56,7 @@ module.exports =
           type: "string",
           minLength: 3,
           maxLength: 3,
-          $originalRef: [
+          "x-original-ref": [
             "../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "../definitions/definitions.json#/name/properties/last",
@@ -64,12 +64,12 @@ module.exports =
           ]
         }
       },
-      $originalRef: ["definitions/definitions.json#/name"],
+      "x-original-ref": ["definitions/definitions.json#/name"],
     },
     age: {
       type: "integer",
       minimum: 0,
-      $originalRef: ["definitions/definitions.json#/age"],
+      "x-original-ref": ["definitions/definitions.json#/age"],
     },
     gender: {
       type: "string",
@@ -77,7 +77,7 @@ module.exports =
         "male",
         "female"
       ],
-      $originalRef: ["definitions/definitions.json#/gender"],
+      "x-original-ref": ["definitions/definitions.json#/gender"],
     }
   }
 };

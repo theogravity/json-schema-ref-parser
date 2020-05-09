@@ -24,13 +24,13 @@ const dereferencedSchema = module.exports =
           }
         },
         title: "pet",
-        $originalRef: [
+        "x-original-ref": [
           "#/definitions/pet"
         ],
       },
       thing: {
         $ref: "#/definitions/thing",
-        $originalRef: [
+        "x-original-ref": [
           "#/definitions/thing"
         ]
       },
@@ -57,7 +57,7 @@ const dereferencedSchema = module.exports =
               }
             },
             title: "pet",
-            $originalRef: [
+            "x-original-ref": [
               "#/definitions/pet"
             ],
           },
@@ -85,7 +85,7 @@ const dereferencedSchema = module.exports =
               type: "number"
             }
           },
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/person"
           ]
         },
@@ -109,7 +109,7 @@ const dereferencedSchema = module.exports =
             }
           },
           title: "pet",
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/pet"
           ],
         }
@@ -132,7 +132,7 @@ const dereferencedSchema = module.exports =
               type: "number"
             }
           },
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/person"
           ],
         },
@@ -156,7 +156,7 @@ const dereferencedSchema = module.exports =
             }
           },
           title: "pet",
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/pet"
           ],
         }
@@ -178,7 +178,7 @@ const dereferencedSchema = module.exports =
               type: "array"
             }
           },
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/parent"
           ]
         },
@@ -194,7 +194,7 @@ const dereferencedSchema = module.exports =
               type: "string"
             }
           },
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/child"
           ],
         },
@@ -218,7 +218,7 @@ const dereferencedSchema = module.exports =
             }
           },
           title: "pet",
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/pet"
           ],
         }
@@ -240,7 +240,7 @@ const dereferencedSchema = module.exports =
               type: "array"
             }
           },
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/parent",
           ],
         },
@@ -258,7 +258,7 @@ const dereferencedSchema = module.exports =
               type: "string"
             }
           },
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/child",
           ],
         },
@@ -282,7 +282,7 @@ const dereferencedSchema = module.exports =
             }
           },
           title: "pet",
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/pet"
           ],
         }
@@ -315,7 +315,7 @@ const dereferencedSchema = module.exports =
               description: "children"
             }
           },
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/child",
           ],
         },
@@ -339,7 +339,7 @@ const dereferencedSchema = module.exports =
             }
           },
           title: "pet",
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/pet"
           ],
         }
@@ -374,7 +374,7 @@ const dereferencedSchema = module.exports =
               description: "children"
             }
           },
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/child",
           ],
         },
@@ -398,7 +398,7 @@ const dereferencedSchema = module.exports =
             }
           },
           title: "pet",
-          $originalRef: [
+          "x-original-ref": [
             "#/definitions/pet"
           ],
         }

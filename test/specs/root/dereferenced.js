@@ -11,12 +11,12 @@ module.exports =
   properties: {
     last: {
       type: "string",
-      $originalRef: ["./name.yaml#/properties/first"],
+      "x-original-ref": ["./name.yaml#/properties/first"],
     },
     first: {
       type: "string",
-      $originalRef: ["./name.yaml#/properties/first"],
+      "x-original-ref": ["./name.yaml#/properties/first"],
     }
   },
-  $originalRef: ["name.yaml", "definitions/root.json"],
+  "x-original-ref": ["name.yaml", "definitions/root.json"],
 };

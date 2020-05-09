@@ -20,7 +20,7 @@ module.exports =
           title: "required string",
           type: "string",
           minLength: 1,
-          $originalRef: ["../definitions/definitions.json#/required string",
+          "x-original-ref": ["../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "#/properties/last",
             "required-string.yaml"
@@ -30,7 +30,7 @@ module.exports =
           title: "required string",
           type: "string",
           minLength: 1,
-          $originalRef: ["../definitions/definitions.json#/required string",
+          "x-original-ref": ["../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "#/properties/last",
             "required-string.yaml"
@@ -44,7 +44,7 @@ module.exports =
           title: "required string",
           type: "string",
           minLength: 3,
-          $originalRef: ["../definitions/definitions.json#/required string",
+          "x-original-ref": ["../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "#/properties/last",
             "#/properties/prefix"
@@ -55,14 +55,14 @@ module.exports =
           type: "string",
           minLength: 3,
           maxLength: 3,
-          $originalRef: ["../definitions/definitions.json#/required string",
+          "x-original-ref": ["../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "#/properties/last",
             "#/properties/prefix"
           ]
         }
       },
-      $originalRef: ["#/definitions/name", "../definitions/name.yaml"]
+      "x-original-ref": ["#/definitions/name", "../definitions/name.yaml"]
     },
     age: {
       type: "integer",
@@ -81,7 +81,7 @@ module.exports =
       title: "required string",
       type: "string",
       minLength: 1,
-      $originalRef: [
+      "x-original-ref": [
         "../definitions/definitions.json#/required string",
         "./required-string.yaml",
         "#/properties/last",
@@ -101,7 +101,7 @@ module.exports =
           title: "required string",
           type: "string",
           minLength: 1,
-          $originalRef: ["../definitions/definitions.json#/required string",
+          "x-original-ref": ["../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "#/properties/last",
             "required-string.yaml"
@@ -111,7 +111,7 @@ module.exports =
           title: "required string",
           type: "string",
           minLength: 1,
-          $originalRef: ["../definitions/definitions.json#/required string",
+          "x-original-ref": ["../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "#/properties/last",
             "required-string.yaml"
@@ -125,7 +125,7 @@ module.exports =
           title: "required string",
           type: "string",
           minLength: 3,
-          $originalRef: ["../definitions/definitions.json#/required string",
+          "x-original-ref": ["../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "#/properties/last",
             "#/properties/prefix"
@@ -136,15 +136,15 @@ module.exports =
           type: "string",
           minLength: 3,
           maxLength: 3,
-          $originalRef: ["../definitions/definitions.json#/required string",
+          "x-original-ref": ["../definitions/definitions.json#/required string",
             "./required-string.yaml",
             "#/properties/last",
             "#/properties/prefix"
           ]
         }
       },
-      $originalRef: ["#/definitions/name", "../definitions/name.yaml"],
+      "x-original-ref": ["#/definitions/name", "../definitions/name.yaml"],
     },
-    $originalRef: ["definitions/definitions.json"],
+    "x-original-ref": ["definitions/definitions.json"],
   }
 };

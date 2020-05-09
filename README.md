@@ -15,7 +15,8 @@ JSON Schema $Ref Parser
 
 Fork notice:
 --------------------------
-- This includes a patch from [@luma](https://github.com/luma/json-schema-ref-parser/commit/dda0b635299ebd1dd96fc010e7110c69e92c6a24) to include an `$originalRef` property
+- This includes a patch from [@luma](https://github.com/luma/json-schema-ref-parser/commit/dda0b635299ebd1dd96fc010e7110c69e92c6a24) to include an `"$originalRef"` property
+- Usage of `$originalRef` breaks `oas-validator` validation, so it has been changed to `x-original-ref`
 
 The Problem:
 --------------------------

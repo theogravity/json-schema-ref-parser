@@ -29,7 +29,7 @@ module.exports =
           minLength: 1,
           type: "string",
           title: "requiredString",
-          $originalRef: ["./required-string.yaml"],
+          "x-original-ref": ["./required-string.yaml"],
         },
         suffix: {
           $ref: "#/definitions/name/properties/prefix",
@@ -40,7 +40,7 @@ module.exports =
           $ref: "#/definitions/name/properties/last"
         }
       },
-      $originalRef: ["definitions/name.yaml"],
+      "x-original-ref": ["definitions/name.yaml"],
     }
   },
   properties: {

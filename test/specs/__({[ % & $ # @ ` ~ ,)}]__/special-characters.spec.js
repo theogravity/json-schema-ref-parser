@@ -27,7 +27,7 @@ describe("File names with special characters", () => {
     const schema = await parser.dereference(path.rel("specs/__({[ % & $ # @ ` ~ ,)}]__/__({[ % & $ # @ ` ~ ,)}]__.yaml"));
     expect(schema).to.equal(parser.schema);
 
-    // @todo fix missing $originalRef in dereferencedSchema
+    // @todo fix missing "x-original-ref" in dereferencedSchema
     // expect(schema).to.deep.equal(dereferencedSchema);
 
     // The "circular" flag should NOT be set
@@ -39,7 +39,7 @@ describe("File names with special characters", () => {
     const schema = await parser.bundle(path.rel("specs/__({[ % & $ # @ ` ~ ,)}]__/__({[ % & $ # @ ` ~ ,)}]__.yaml"));
     expect(schema).to.equal(parser.schema);
 
-    // @todo fix missing $originalRef in dereferencedSchema
+    // @todo fix missing "x-original-ref" in dereferencedSchema
     // expect(schema).to.deep.equal(dereferencedSchema);
   });
 });

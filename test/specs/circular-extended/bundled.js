@@ -8,7 +8,7 @@ const bundledSchema = module.exports =
         title: "thing",
         $ref: "#/definitions/thing",
         description: "This JSON Reference has additional properties (other than $ref). Normally, this creates a new type that extends the referenced type, but since this reference points to ITSELF, it doesn't do that.\n",
-        $originalRef: [
+        "x-original-ref": [
           "definitions/thing.yaml"
         ],
       }
@@ -21,11 +21,11 @@ const bundledSchema = module.exports =
     properties: {
       age: {
         type: "number",
-        $originalRef: ["animals.yaml#/definitions/bird/properties/age"],
+        "x-original-ref": ["animals.yaml#/definitions/bird/properties/age"],
       },
       name: {
         type: "string",
-        $originalRef: ["animals.yaml#/definitions/dog/properties/name"],
+        "x-original-ref": ["animals.yaml#/definitions/dog/properties/name"],
       },
       species: {
         type: "string",
@@ -37,7 +37,7 @@ const bundledSchema = module.exports =
         ],
       },
     },
-    $originalRef: ["definitions/pet.yaml"],
+    "x-original-ref": ["definitions/pet.yaml"],
   },
 
   ancestor: {
@@ -57,7 +57,7 @@ const bundledSchema = module.exports =
             type: "string"
           }
         },
-        $originalRef: ["definitions/person-with-spouse.yaml"],
+        "x-original-ref": ["definitions/person-with-spouse.yaml"],
       },
       pet: null
     }
@@ -79,7 +79,7 @@ const bundledSchema = module.exports =
             type: "array"
           }
         },
-        $originalRef: [
+        "x-original-ref": [
           "definitions/parent-with-children.yaml"
         ],
       },
@@ -101,7 +101,7 @@ const bundledSchema = module.exports =
             type: "string"
           }
         },
-        $originalRef: [
+        "x-original-ref": [
           "definitions/child-with-parents.yaml"
         ],
       },
@@ -123,7 +123,7 @@ const bundledSchema = module.exports =
             description: 'This JSON Reference has additional properties (other than $ref). This creates a new type that extends "child".\n',
           }
         },
-        $originalRef: [
+        "x-original-ref": [
           "definitions/parent-with-child.yaml"
         ],
       },
@@ -146,7 +146,7 @@ const bundledSchema = module.exports =
             description: "children"
           }
         },
-        $originalRef: [
+        "x-original-ref": [
           "definitions/child-with-children.yaml"
         ],
       }

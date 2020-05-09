@@ -19,15 +19,15 @@ module.exports =
         last: {
           minLength: 1,
           type: "string",
-          $originalRef: ["#/definitions/name/properties/first"],
+          "x-original-ref": ["#/definitions/name/properties/first"],
         },
         first: {
           minLength: 1,
           type: "string",
-          $originalRef: ["#/definitions/name/properties/first"],
+          "x-original-ref": ["#/definitions/name/properties/first"],
         }
       },
-      $originalRef: ["#/definitions/name"],
+      "x-original-ref": ["#/definitions/name"],
     }
   },
   required: [
@@ -56,15 +56,15 @@ module.exports =
         last: {
           minLength: 1,
           type: "string",
-          $originalRef: ["#/definitions/name/properties/first"]
+          "x-original-ref": ["#/definitions/name/properties/first"]
         },
         first: {
           minLength: 1,
           type: "string",
-          $originalRef: ["#/definitions/name/properties/first"]
+          "x-original-ref": ["#/definitions/name/properties/first"]
         }
       },
-      $originalRef: ["#/definitions/name"],
+      "x-original-ref": ["#/definitions/name"],
     }
   },
   title: "Person"

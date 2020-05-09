@@ -7,7 +7,7 @@ module.exports =
     "name-with-min-length": {
       "min-length": 1,
       type: "string",
-      $originalRef: [
+      "x-original-ref": [
         "#/definitions/name-with-min-length",
         "../definitions/strings.yaml#/definitions/string-with-min-length"
       ]
@@ -16,16 +16,16 @@ module.exports =
       "min-length": 1,
       "max-length": 20,
       type: "string",
-      $originalRef: [
+      "x-original-ref": [
         "#/definitions/name-with-min-length-max-length",
         "./strings.yaml#/definitions/string-with-min-length-max-length"
       ]
     },
     name: {
       type: "string",
-      $originalRef: ["#/definitions/name", "strings.yaml#/definitions/string"],
+      "x-original-ref": ["#/definitions/name", "strings.yaml#/definitions/string"],
     },
-    $originalRef: ["definitions/definitions.json"],
+    "x-original-ref": ["definitions/definitions.json"],
   },
   required: [
     "name"
@@ -35,7 +35,7 @@ module.exports =
     middleName: {
       "min-length": 1,
       type: "string",
-      $originalRef: [
+      "x-original-ref": [
         "#/definitions/name-with-min-length",
         "../definitions/strings.yaml#/definitions/string-with-min-length"
       ]
@@ -44,14 +44,14 @@ module.exports =
       "min-length": 1,
       "max-length": 20,
       type: "string",
-      $originalRef: [
+      "x-original-ref": [
         "#/definitions/name-with-min-length-max-length",
         "./strings.yaml#/definitions/string-with-min-length-max-length"
       ]
     },
     firstName: {
       type: "string",
-      $originalRef: ["#/definitions/name", "strings.yaml#/definitions/string"],
+      "x-original-ref": ["#/definitions/name", "strings.yaml#/definitions/string"],
     }
   },
 };
