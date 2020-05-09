@@ -1,6 +1,6 @@
 "use strict";
 
-const { host } = require("host-environment");
+const { host } = require("@jsdevtools/host-environment");
 const { expect } = require("chai");
 const $RefParser = require("../../lib");
 const helper = require("../utils/helper");
@@ -216,10 +216,7 @@ describe("$Refs object", () => {
       }
       catch (err) {
         expect(err).to.be.an.instanceOf(Error);
-        expect(err.message).to.equal(
-          'Error resolving $ref pointer "definitions/name.yaml#/". ' +
-          '\nToken "" does not exist.'
-        );
+        expect(err.message).to.equal('Token "" does not exist.');
       }
     });
 
@@ -257,10 +254,7 @@ describe("$Refs object", () => {
       }
       catch (err) {
         expect(err).to.be.an.instanceOf(Error);
-        expect(err.message).to.equal(
-          'Error resolving $ref pointer "external.yaml#/foo/bar". ' +
-          '\nToken "foo" does not exist.'
-        );
+        expect(err.message).to.equal('Token "foo" does not exist.');
       }
     });
   });
